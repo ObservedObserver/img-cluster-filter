@@ -7,9 +7,17 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "resolutions": {
+    "**/util": "^0.12.0"
+  },
+  "prettier": {
+    "tabWidth": 4
+  },
   "dependencies": {
+    "assert": "^2.0.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-material": "^1.0.0-beta-14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -32,7 +40,10 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-debugger": "warn",
+      "no-unused-vars": "warn"
+    }
   },
   "browserslist": [
     "> 1%",
